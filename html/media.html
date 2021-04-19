@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+</head>
+<body>
+    <h3>Example for a single audio file</h3>
+    <audio controls src="/media/sampleaudio.mp3"> Sample Audio </audio>
+
+    <h3>Example with multiple sources of audio file</h3>
+    <audio controls loop autoplay>
+        <source src="/media/sampleaudio.mp3" type="mp3">
+        <source src="/media/sample-oggfile.ogg" type="ogg">
+        Sorry your browser cannot play this audio format
+    </audio>
+
+    <h3>Example with a Video from project directory with no substitles</h3>
+    <video controls src="/media/samplevideo.mp4"> Sample Video </video>
+
+    <h3>Example with a Video from project directory with substitles</h3>
+    <video controls>
+        <source src="/media/samplevideo.mp4" type="video">
+        <track src="/media/samplevideo.vtt" kind="captions" label="english" default>
+    </video>
+
+    <h3>Example for embedded Videos from Video hosting sites</h3>
+    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/7yDmGnA8Hw0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</body>
+</html>
